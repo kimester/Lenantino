@@ -1,58 +1,177 @@
-
 body {
-    font-family:'Times New Roman', Times, serif;
-    margin: 0;
-    background-color:linear-gradient ( beige rgb(145, 113, 49));
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  background-color: rgb(219, 219, 250);
 }
 
- header {
-    text-align: left;
-    background: rgb(168, 139, 112);
-    color: white; 
-    display:flex;
-    flex-direction: row;
-} 
-
-ul {
-display:inline;
-list-style-type: none;
-font-size: 20px;
-text-decoration-line: underline;
-color: rgba(8, 5, 1, 0.753)
+header {
+  background: rgb(131, 125, 141);
+  color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120px;
 }
 
-nav {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
- 
-    padding: 50px;
-    font-family: 'Times-New Roman', Times, serif;
-    border: 9px navy;
+.one {
+  width: 1000px;
+  height: 200px;
+  margin: 20;
+  border-width: 20px;
 }
-nav a {
-    text-decoration: none;
-    padding: 10px; 
-    color: black; 
-    font-size: 18px;
+section {
+  width: 1000px;
+  height: 480px;
+  border: 10px solid rgb(158, 109, 197);
+  padding: 20px;
 }
 
-#aboutMe{
+.img {
+  width: 400px;
+  height: 100px;
+  border: 20;
+  margin: 50px;
+  padding: 1000px;
+}
 
-    border: 2px gray dotted;
-    border-radius: 10px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: row;
-    margin:20px; 
-}
-#aboutMe > h2 {
-    border-right: 2px solid red;
-}
-main{
-    min-height: 600px;
-}
 .card {
+  flex-grow: 1;
+  width:200px;
+  height:200pxp;
+  background:lightsteelblue;
+  margin: 20px 30px;
+  padding:25px
+  border:15px solid darkblue;
+}
+
+img:hover {
+    filter: contrast(200%);
+    transition: 2s all ease; 
+    cursor: pointer;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding: 50 100 50 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 100px rgb(207,90,178)
+  
+}
+
+ nav a {
+    text-align: right;
+    text-decoration: underline;
+    padding: 0px 50px; 
+    margin: 25px ;
+    color: white; 
+    font-size: 20px;
+
+}
+
+#contact{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: 'Times-New Roman', Times, serif;
+        text-align:center;
+    text-decoration: underline;
+    list-style-type:none;
+    padding: 0px 50px; 
+    margin: 15px ;
+    color: rgb(108, 31, 160); 
+    font-size: 20px;
+   }
+
+
+
+
+aboutMe > h3 {
+    color: cornsilk;
+    border-right: 2px solid rgb(59, 50, 59);
+    border-width: 4px;   
+}
+
+.box {
+height: 200px;
+width: 100%;
+background:url(https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80/100px/100%);
+}
+
+.boxinimg {
+    width: 300px;
+    height: 60px;
+    margin: 0;
+    left: 1100px;
+    /* box-sizing:border-box; */
+  padding: 10;
+  background: rgb(208, 209, 211);
+  border-style: solid;
+  border-color: #5b5b5c;
+  position: absolute;
+  top: 250px;
+  right: 50;
+  font-size: 36px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#about {
+  font-size: 30px;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+#about > h3 {
+  color: cornsilk;
+  border-right: 2px solid rgb(59, 50, 59);
+  border-width: 4px;
+}
+
+#work {
+  font-size: 80px;
+  color: cornsilk;
+}
+
+#work > h3 {
+  border-right: 4px solid green;
+  border-width: 5px;
+}
+
+main {
+  min-height: 600px;
+}
+
+#contact > h3 {
+  color: cornsilk;
+  border-right: 2px solid rgb(199, 6, 216);
+  border-width: 4px;
+}
+
+/* .one h3 {
+    width:60px;
+    height:20;
+    background-color: white;
+    border-style:solid;
+    margin:bottom 0;
+} */
+
+/* .one {
+height:200;
+width:1300;
+} */
+
+/* .one:hover {
+    filter:sepia();
+    transition: 5s all ease; 
+    cursor: pointer; */
+
+/* .card {
     width: 40px;
     height:40px;
     box-sizing:border-box;
@@ -63,16 +182,24 @@ main{
     border-radius:10px;
     border-width:14px;
     border-color: #b9c6ae
-}
+} */
 
 /* .card img {
     width: 10%;
     height: 10%; */
-}
 
 /* .box-one
     padding: 0;
     margin: 0;
+
+
+    ul {
+display:inline;
+list-style-type: none;
+font-size: 20px;
+text-decoration-line: underline;
+color: rgba(8, 5, 1, 0.753);
+}
 
 }
 
@@ -90,5 +217,4 @@ main{
     width: 100%;
     padding: 10px;
     /* text-align: center; */
-    background-color: rgb(168, 139, 112);
-} */ */
+/* background-color: rgb(168, 139, 112); */
